@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["es2019", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "types": ["node"]
+  },
+  "include": ["./src/**/*"]
+}

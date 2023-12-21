@@ -1,0 +1,47 @@
+{
+  "name": "ftp-child-client",
+  "author": "Chingiz Sirgelbayev <csirgilbaev@gmail.com>",
+  "version": "1.0.0",
+  "description": "FTP client for Node.js",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run clean && npm run lint && tsc && mocha",
+    "test": "npm run prepublishOnly",
+    "clean": "rm -rf dist",
+    "lint": "eslint \"./src/**/*.ts\"",
+    "lint-fix": "eslint --fix \"./src/**/*.ts\"",
+    "dev": "npm run clean && tsc --watch",
+    "tdd": "mocha --watch",
+    "buildOnly": "tsc"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ftp",
+    "ftps",
+    "promise",
+    "async",
+    "await",
+    "tls",
+    "ipv6",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "basic-ftp": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/mocha": "10.0.6",
+    "@types/node": "20.10.4",
+    "@typescript-eslint/eslint-plugin": "6.14.0",
+    "@typescript-eslint/parser": "6.14.0",
+    "eslint": "8.55.0",
+    "mocha": "10.2.0",
+    "typescript": "5.3.3"
+  }
+}
